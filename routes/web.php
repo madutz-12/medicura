@@ -12,6 +12,7 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 //Route::resource('doctores', DoctoreController::class);
 
+//Ruta de doctores CRUD
 Route::get('/doctore', [DoctoreController::class, 'index'])->name('doctores.index');
 Route::get('/doctore/create', [DoctoreController::class, 'create'])->name('doctores.create');
 
